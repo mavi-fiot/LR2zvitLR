@@ -127,7 +127,7 @@ else if (labNumber === 2) {
     let button25 = document.createElement("button");
     button25.textContent = "Селектори класу";
     button25.onclick = function() {
-        displaySubMenuContent("HTML-код ФОРМИ");
+        displaySubMenuContent("Селектори класу");
     };
     menu.appendChild(button25);
 
@@ -148,7 +148,7 @@ else if (labNumber === 2) {
     let button28 = document.createElement("button");
     button28.textContent = "CSS: Шрифти. Текст. Таблиці. Фон. Контур. Списки. CSS просунутий";
     button28.onclick = function() {
-        displaySubMenuContent("ІCSS: Шрифти. Текст. Таблиці. Фон. Контур. Списки. CSS просунутий");
+        displaySubMenuContent("CSS: Шрифти. Текст. Таблиці. Фон. Контур. Списки. CSS просунутий");
     };
     menu.appendChild(button28);
 
@@ -299,27 +299,27 @@ function displaySubMenuContent(buttonText) {
             `;
             break;
 
-            case "HTML-код ТАБЛИЦЬ":
-                contentHTML = `
-                    <table>
-                        <caption>Таблиця товарів</caption>
-                        <thead>
-                            <tr>
-                                <th>Назва товару</th>
-                                <th>Ціна товару</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Сукня</td>
-                                <td>500 грн</td>
-                            </tr>
-                            <tr>
-                                <td>Блуза</td>
-                                <td>300 грн</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        case "HTML-код ТАБЛИЦЬ":
+            contentHTML = `
+                <table>
+                    <caption>Таблиця товарів</caption>
+                    <thead>
+                        <tr>
+                            <th>Назва товару</th>
+                            <th>Ціна товару</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сукня</td>
+                            <td>500 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Блуза</td>
+                            <td>300 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
 
                     <h3>HTML-код ТАБЛИЦЬ</h3>
                         <pre>
@@ -346,8 +346,8 @@ function displaySubMenuContent(buttonText) {
                                     &lt;/table&gt;
                             </code>
                         </pre>
-`;
-break;
+            `;
+            break;
             
         case "HTML-код ФОРМИ":
             contentHTML = `
@@ -441,13 +441,135 @@ break;
 
                 <h3>Місце розташування ЛР №2</h3>
                 <p>Розміщено на GitHub</p>
-                <p><a href="https://github.com/mavi-fiot/zvitLR_html" target="_blank">Звіт.</a> <a href="https://mavi-fiot.github.io/zvitLR_html/" target="_blank">Сайт звіту.</a></p>
-                <p><a href="https://github.com/mavi-fiot/webStream" target="_blank">Проект.</a> <a href="https://mavi-fiot.github.io/webStream/" target="_blank">Сайт проекту.</a></p>
-                <p><a href="https://github.com/mavi-fiot/resume" target="_blank">Резюме.</a> <a href="https://mavi-fiot.github.io/resume/" target="_blank">Сайт резюме.</a></p>
+                <p><a href="https://github.com/mavi-fiot/LR2zvitLR" target="_blank">Звіт.</a> <a href="https://mavi-fiot.github.io/LR2zvitLR/" target="_blank">Сайт звіту.</a></p>
+                <p><a href="https://github.com/mavi-fiot/LR2WebStore" target="_blank">Проект.</a> <a href="https://mavi-fiot.github.io/LR2WebStore/" target="_blank">Сайт проекту.</a></p>
+                <p><a href="https://github.com/mavi-fiot/LR2Resume" target="_blank">Резюме.</a> <a href="https://mavi-fiot.github.io/LR2Resume/" target="_blank">Сайт резюме.</a></p>
                 
             `;
             break;
+
+        case "Способи підключення стилів":
+            contentHTML = `
+                <h3>Способи підключення стилів</h3>
+                <p>Вбудований CSS: Стилі можна включати безпосередньо в HTML-документ за допомогою тегу <style>. 
+                Вбудований CSS також можна використовувати в тегах за допомогою атрибута style.  </p>
+
+                <p>Зовнішній CSS: Стилі можна розмістити у зовнішньому файлі CSS і підключити їх до HTML-документу за допомогою тегу <link>.</p>
+
+                <p>Використання JavaScript для динамічного додавання стилів: Ви можете використовувати JavaScript для створення або зміни стилів динамічно. </p>
+                              
+            `;
+            break;
         
+        case "СЕЛЕКТОРИ":
+            contentHTML = `
+                <h3>СЕЛЕКТОРИ</h3>
+
+                <p>Селектори тегу</p>
+                
+                <p>Селектори класу</p>
+
+                <p>Селектори ідентифікаторів</p>
+
+                <p>Селектори сусідні</p>
+
+                <p>Селектори атрибута </p>
+
+                <p>Селектори універсальні</p>
+
+                <p>Селектори дочірні</p>
+
+                              
+            `;
+            break;
+
+            case "Селектори тегу":
+                contentHTML = `
+                    <h3>Селектори тегу</h3>    
+                    
+                    <img src="s1.webp" alt="sel1">                   
+                    
+                                  
+                `;
+                break;
+            case "Селектори класу":
+            contentHTML = `
+                <h3>Селектори класу</h3>
+                <img src="s2.png" alt="sel2">
+                                              
+                `;
+                break;
+
+            case "Селектори ідентифікаторів":
+            contentHTML = `
+                <h3>Селектори ідентифікаторів</h3>
+                <img src="s3.png" alt="sel3">   
+                                              
+                `;
+                break;
+
+            case "Інші селектори":
+            contentHTML = `
+                <h3>Інші селектори</h3>
+
+                <p>Селектори сусідні</p>
+                <img src="s4.png" alt="sel4">
+
+                <p>Селектори атрибута </p>
+                <img src="s5.png" alt="sel5">
+
+                <p>Селектори універсальні</p>
+                <img src="s6.png" alt="sel6">
+
+                <p>Селектори дочірні</p>
+                <img src="s7.png" alt="sel7">
+                              
+                `;
+                break;
+
+            case "CSS: Шрифти. Текст. Таблиці. Фон. Контур. Списки. CSS просунутий":
+            contentHTML = `
+                <h3>CSS: Шрифти. Текст. Таблиці. Фон. Контур. Списки. CSS просунутий</h3>
+
+                <p>Шрифти </p>
+                <img src="sr11.png" alt="sr11">
+                <img src="sr12.png" alt="sr12">                
+                <p>Текст </p>
+                <img src="sr21.png" alt="sr21">
+                <img src="sr22.png" alt="sr22">
+                <p>Таблиці </p>
+                <img src="sr31.png" alt="sr31">
+                <img src="sr32.png" alt="sr32">
+                <p>Фон</p>
+                <img src="sr41.png" alt="sr41">
+                <img src="sr42.png" alt="sr42">
+                <p>Контур</p>
+                <img src="sr51.png" alt="sr51">
+                <img src="sr52.png" alt="sr52">
+                <p>Списки</p>
+                <img src="sr61.png" alt="sr61">
+                <img src="sr62.png" alt="sr62">     
+                <p>СSS Просунутий </p>
+                <img src="sr71.png" alt="sr71">
+                <img src="sr72.png" alt="sr72">  
+                <p>Більше результатів за посиланнями:</p>   
+                <p><a href="https://github.com/mavi-fiot/samostiina_robota_2" target="_blank">Репозиторій за самостійною роботою № 2.</a> </p>
+                <p><a href="https://mavi-fiot.github.io/samostiina_robota_2/" target="_blank">Сторінка результатів виконання практичних завдань.</a></p>
+                `;
+                break;
+
+            case "Висновки":
+            contentHTML = `
+                <h3>Висновки</h3>
+
+                <p>В ході виконання лабораторної роботи набуто практичних навичок роботи  з селекторами, 
+                ідентифікаторами, списками,  різноманітними властивостями 
+                кольору і фону,  зовнішними та внутрішними  відступами,  
+                плаваючими елементами, оформленням текстових елементів. Набуті навички реалізовано в загальному проекті, посилання на який наведено вище. </p>
+                
+                `;
+                break;
+
         default:
             contentHTML = "<p>Тут має відображатися зміст вибраного пункту меню.</p>";
             break;
